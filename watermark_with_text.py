@@ -4,7 +4,7 @@ from utils import CFEVideoConf
 cap = cv2.VideoCapture(0)
 
 save_path = 'saved-media/watermark_text.mp4'
-frames_per_seconds = 24 # taka wartosc moze nie dzialac
+frames_per_seconds = 24
 config = CFEVideoConf(cap, filepath=save_path, res='720p')
 out = cv2.VideoWriter(save_path, config.video_type, frames_per_seconds, config.dims)
 
