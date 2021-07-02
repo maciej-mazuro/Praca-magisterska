@@ -14,7 +14,7 @@ user_name = os.getenv("USERNAME")
 if user_name == 'Maciek':
 	img_path = "C:\\Users\\Maciek\\projects\\Praca-magisterska\\images\\watka.png"
 else:
-	img_path = "C:\\Users\\ADMIN\\projects\\Praca-magisterska\\images\\watka.jpg"
+	img_path = "C:\\Users\\ADMIN\\projects\\Praca-magisterska\\images\\watka.png"
 
 logo = cv2.imread(img_path, -1)
 watermark = image_resize(logo, height=100)
